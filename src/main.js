@@ -1,6 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from '@/store'
+import './assets/tailwind.css'
+import directives from '@/directives'
+const app = createApp(App)
+directives.forEach(el=>{app.component(el.name, el)})
 
-createApp(App).use(store).use(router).mount('#app')
+app
+.use(store)
+.mount('#app')
+

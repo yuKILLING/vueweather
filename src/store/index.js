@@ -1,14 +1,11 @@
-import { createStore } from 'vuex'
+import {createStore} from "vuex";
+import {weatherInfo} from "@/store/weatherInfo";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+      isAuth: false,
+    },
+    modules: {
+        weatherInfo: weatherInfo
+    }
 })
