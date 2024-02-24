@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 
 export const weatherInfo = {
     state: ()=>({
-        apiKey: 'e5490edd4abbac88177dba9984623ced',
+        apiKey: 'yourApiKey',
         degrees: 0,
         typeOfWeather: '',
         wind: '',
