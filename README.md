@@ -12,6 +12,9 @@ Vue 3, Vuex, TailwindCSS
 
 ### Start App
 ```
+First of all, take your APIKEY from openweather.
+Then put it in /src/store/weatherInfo in state.
+
 npm install
 npm run serve
 ```
